@@ -321,7 +321,6 @@ def before_request():
 
 @application.route('/logout1')
 def logout1():
-	logout_user()
 	session.pop('loggedin', None)
 	session.pop('email', None)
 	session.clear()
@@ -918,7 +917,6 @@ def logout8():
 
 @application.route('/edit/logout1')
 def logout9():
-	logout_user()
 	session.pop('loggedin', None)
 	session.pop('email', None)
 	session.clear()
@@ -926,7 +924,6 @@ def logout9():
 
 @application.route('/editprof/logout1')
 def logout10():
-	logout_user()
 	session.pop('loggedin', None)
 	session.pop('email', None)
 	session.clear()
